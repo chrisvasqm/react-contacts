@@ -1,5 +1,6 @@
-import { Heading, List, ListItem } from '@chakra-ui/react';
+import { Heading } from '@chakra-ui/react';
 import data from './data/people.json';
+import ContactList from './components/ContactList';
 
 function App() {
   const people = data;
@@ -8,7 +9,7 @@ function App() {
     <>
       <Heading>Contacts</Heading>
 
-      <List>{people && people.map(person => <ListItem>{person.name}</ListItem>)}</List>
+      <ContactList contacts={people} />
     </>
   );
 }
