@@ -6,12 +6,19 @@ import { ChakraProvider } from '@chakra-ui/react';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './pages/ErrorPage.tsx';
+import ContactDetailsPage from './pages/ContactDetailsPage.tsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: 'contacts/:id',
+        element: <ContactDetailsPage />
+      }
+    ]
   }
 ]);
 
