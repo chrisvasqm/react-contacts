@@ -2,16 +2,16 @@
   {
     "id": 1,
     "name": "Lea",
-    "image": "../src/asserts/person_1.jpeg"
+    "image": "../src/assets/person_1.jpeg"
   },
   {
     "id": 2,
     "name": "Marcus",
-    "image": "../src/asserts/person_2.jpeg"
+    "image": "../src/assets/person_2.jpeg"
   },
   {
     "id": 3,
     "name": "Richard",
-    "image": "../src/asserts/person_3.jpeg"
+    "image": "../src/assets/person_3.jpeg"
   }
 ]
