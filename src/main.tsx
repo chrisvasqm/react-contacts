@@ -5,11 +5,13 @@ import './index.css';
 import { ChakraProvider } from '@chakra-ui/react';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ErrorPage from './pages/ErrorPage.tsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />
+    element: <App />,
+    errorElement: <ErrorPage />
   }
 ]);
 
