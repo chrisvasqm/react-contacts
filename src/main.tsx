@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
-import { ChakraProvider } from '@chakra-ui/react';
+import { Box, ChakraProvider } from '@chakra-ui/react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './pages/ErrorPage.tsx';
 import ContactDetailsPage from './pages/ContactDetailsPage.tsx';
@@ -25,7 +25,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ChakraProvider>
-      <RouterProvider router={router} />
+      <Box bg={'gray.200'} h={'100vh'}>
+        <RouterProvider router={router} />
+      </Box>
     </ChakraProvider>
   </React.StrictMode>
 );
